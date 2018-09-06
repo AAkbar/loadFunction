@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 .grid:after {
   content: "";
   display: table;
@@ -14,7 +15,7 @@
   position: absolute;
   width: 1px; }
 
-[class^="btn--"] {
+.header, .footer, [class^="btn--"] {
   text-align: center; }
 
 .centered, .grid {
@@ -380,6 +381,57 @@ td,
 th {
   padding: 0; }
 
+* {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+a:link, a:visited, a:hover, a:active {
+  color: black;
+  text-decoration: none; }
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.header, .footer {
+  background: #52bab3;
+  color: #525559;
+  letter-spacing: 0.1875em;
+  font-weight: 100; }
+
+.container-inner {
+  text-align: center;
+  padding: 1.875em 4.375em;
+  min-height: 80vh;
+  background-color: #39add1; }
+
+.aside {
+  float: left; }
+  .aside a {
+    display: block;
+    margin: 0;
+    margin-bottom: 1.25em; }
+
+.explaination__description .img {
+  width: 62.5%;
+  margin-top: 1.875em;
+  shape-margin: 0px; }
+.explaination__description p {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.25em;
+  word-spacing: 1em; }
+
+.filter {
+  filter: blur(2px); }
+
+.border {
+  border: 4px dashed rgba(11, 11, 11, 0.2); }
+
+.background {
+  background-image: linear-gradient(30deg, #65b165, #973838); }
+
 .panel {
   padding: 1.875em 4.375em; }
 
@@ -389,7 +441,7 @@ th {
     width: 100%; }
   @media (min-width: 1100px) {
     .grid {
-      max-width: 1050px; } }
+      max-width: 1290px; } }
 
 @media (min-width: 769px) {
   .grid__col--1 {
@@ -439,7 +491,7 @@ th {
     padding-right: 10px; }
     [class^="grid__col--"] + [class^="grid__col--"] {
       margin-left: 2%; }
-    [class^="grid__col--"]:last-of-type {
+    [class^="grid__col--"]:last-child {
       float: right; } }
 
 [class^="btn--"] {
@@ -459,14 +511,14 @@ th {
 
 .btn--default {
   background-color: #52bab3; }
-.btn--success {
-  background-color: #5ece7f; }
 .btn--error {
   background-color: #e67478; }
 .btn--warning {
   background-color: #ff784f; }
 .btn--info {
   background-color: #9279c3; }
+.btn--success {
+  background-color: #5ece7f; }
 
 [class^="btn--"] {
   margin-bottom: 1.4285714286em; }
@@ -476,8 +528,14 @@ th {
   @media (min-width: 769px) {
     [class^="btn--"] {
       width: auto;
-      display: inline-block; }
-      [class^="btn--"] + [class^="btn--"] {
-        margin-left: 20px; } }
+      display: inline-block; } }
+
+.img {
+  width: 100%;
+  height: auto; }
+  .img--circle {
+    float: left;
+    clip-path: circle();
+    shape-outside: circle(); }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,64 @@
+@import url($font-url--google);
+
+*{
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+a:link, a:visited, a:hover, a:active{
+  color: black;
+  text-decoration: none;
+}
+body{
+  font-family: $font-family--primary;
+}
+.header, .footer{
+  @extend %center-align;
+  background: $color-primary;
+  color: palette(grey, x-dark);
+  letter-spacing: em(3px);
+  font-weight: $font-weight--thin;
+}
+.container-inner{
+  text-align: center;
+  padding: em(30px) em(70px);
+  min-height: 80vh;
+  background-color: $color-secondary;
+}
+.aside{
+  float: left;
+  a{
+    display: block;
+    margin: 0;
+    margin-bottom: em(20px); 
+  }
+}
+.explaination{
+
+  &__description{
+    .img{
+      width: percentage(600px/960px);
+      margin-top: em(30px);
+      shape-margin: 0px;
+    }
+    p{
+      text-align: left;
+      font-weight: $font-weight--bold;
+      font-size: em(20px);
+      word-spacing: em(20px, 20px);
+    }
+  }
+}
+
+.filter{
+  filter: blur(2px);
+}
+
+.border{
+  border: 4px dashed $color-shadow;
+}
+
+.background{
+  background-image: linear-gradient(30deg, rgb(101, 177, 101), rgb(151, 56, 56));
+}

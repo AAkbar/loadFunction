@@ -1,0 +1,9 @@
+.img{
+  width: 100%;
+  height: auto;
+  &--circle{
+    float: left;
+    clip-path: circle();
+    shape-outside: circle();
+  }
+}

@@ -58,10 +58,10 @@ $color-palettes: (
 
 $ui-colors: (
 	default : $fountain-blue,
-	success : $emerald,
 	error   : $sunglo,
 	warning : $coral,
-	info    : $purple-majesty
+	info    : $purple-majesty,
+	success : $emerald
 );
 
 // Text
@@ -88,4 +88,4 @@ $path--rel      : "../img";
 $g-col-width    : 65px;
 $g-gutter-width : 20px;
 $g-col-count    : 12;
-$g-cont-max-w   : 1050px;
+$g-cont-max-w   : 1290px;
