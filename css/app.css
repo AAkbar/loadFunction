@@ -380,6 +380,9 @@ td,
 th {
   padding: 0; }
 
+.panel {
+  padding: 1.875em 4.375em; }
+
 .grid {
   width: 90%; }
   [class*="grid__col--"] > .grid {
