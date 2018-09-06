@@ -9,6 +9,9 @@
       link = target.attr("href");
     e.preventDefault();
 
-    load.stop().empty().load(link);
+    load.stop().empty().load(link, function () {
+      successBtn.addClass(".btn--info").removeClass("btn--success");
+      target.addClass("btn--success");
+    });
   });
 }(jQuery));
